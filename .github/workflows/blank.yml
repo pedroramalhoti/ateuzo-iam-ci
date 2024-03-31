@@ -35,4 +35,4 @@ jobs:
         run: docker stop api-zimbra || true && docker rm api-zimbra || true
 
       - name: Run new container
-        run: docker run --name api-zimbra -d -p 8080:80 api-zimbra:latest
+        run: docker run --name api-zimbra -d -p 8089:80 api-zimbra:latest
